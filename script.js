@@ -34,3 +34,26 @@ function changeFact() {
     const factElement = document.getElementById('fact');
     factElement.textContent = currentCategory[randomIndex];
 }
+// script.js
+function swingMood() {
+    const moodColors = {
+        love: '#ffb6c1', // Light pink for love
+        emotional: '#add8e6', // Light blue for emotional
+        jokes: '#ffffe0' // Light yellow for jokes
+    };
+
+    const moodEmojis = {
+        love: '❤️',
+        emotional: '😢',
+        jokes: '😂'
+    };
+
+    // Randomly select a mood
+    const moods = Object.keys(moodColors);
+    const randomMood = moods[Math.floor(Math.random() * moods.length)];
+
+    // Set the background color and emoji based on the selected mood
+    document.body.style.backgroundColor = moodColors[randomMood];
+    const emojiElement = document.getElementById('emoji');
+    emojiElement.textContent = moodEmojis[randomMood];
+}
