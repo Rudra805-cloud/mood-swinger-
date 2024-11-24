@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Categories</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>change your Mood</h1>
+    </header>
+    <main>
+        <section id="categories">
+            <button onclick="showCategory('jokes')">Laughing Jokes</button>
+            <button onclick="showCategory('emotional')">Emotional Shayari</button>
+            <button onclick="showCategory('love')">Love Shayari</button>
+            <button onclick="swingMood()">Mood Swinger</button>
+        </section>
+        <section id="display" style="display: none;">
+            <p id="fact">Click a category to start!</p>
+            <div id="emoji" class="emoji"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
